@@ -1,0 +1,86 @@
+.Info{
+	padding: 20px;
+	display:flex;
+    width: 100%;
+    flex-direction:column;
+}
+
+
+.top{
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	
+}
+.bottom{
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	margin-top: 10px;
+	
+}
+
+.right{
+	width:26rem ;
+	margin-left: 4em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1.5rem;
+}
+
+.left{
+	width:20rem ;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1.5rem;
+	
+}
+.postLeft{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1.5rem;
+	width:20rem ;
+	margin-right: 2rem;
+	margin-left: 1.5rem;
+}
+.preright{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1.2rem;
+	width: 20rem;
+	margin-right: 2rem;
+}
+.preleft{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1.5rem;
+	overflow: hidden;
+	width:20rem ;
+}
+
+.image{
+	margin: 30px;
+	margin-top: 10px;
+	width: 7rem;
+	height: 7rem;
+	border: 5px solid #fff;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.image img{
+	
+    width: 7rem;
+	height: 7rem;
+	object-fit: cover;
+}

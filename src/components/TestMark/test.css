@@ -1,0 +1,28 @@
+.seriesHolder{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5%;
+}
+
+.cards{
+	border: 1px solid whitesmoke;
+	border-radius: 2rem;
+	padding: 10px;
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.cards table{
+	
+	width: 25rem;
+}
+
+.first{
+	text-align: center;
+	padding: 8px;
+}
