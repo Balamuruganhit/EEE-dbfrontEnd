@@ -15,7 +15,7 @@ const Login = () => {
 	function handleSubmit(event) {
 		event.preventDefault();
 
-		axios.post("https://eeedatabase.onrender.com//auth/adminlogin", values)
+		axios.post("https://eeedatabase.onrender.com/auth/adminlogin", values)
 			.then(result => {
 				console.log()
 				if (result.data.loginStatus) {

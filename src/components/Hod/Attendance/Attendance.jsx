@@ -23,7 +23,7 @@ const Attendance =()=>{
 	const [error, setError] = useState(null);
 	
 	useEffect(()=>{
-	  axios.get("https://eeedatabase.onrender.com//data/sent")
+	  axios.get("https://eeedatabase.onrender.com/data/sent")
 	  .then(result=>{
 		if (result.data){
 		  setStudent(result.data)
@@ -40,7 +40,7 @@ const Attendance =()=>{
 	
 	async function handleFormSubmit (event) {
 		console.log(values)
-		await axios.post("https://eeedatabase.onrender.com//data/mark",values)
+		await axios.post("https://eeedatabase.onrender.com/data/mark",values)
 		.then(result=>{
 			console.log(result)
 			setError(result.data)

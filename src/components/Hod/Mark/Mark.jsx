@@ -13,7 +13,7 @@ import axios from 'axios'
 const Mark =()=>{
 	const [student,setStudent]=useState([])
 	useEffect(()=>{
-	  axios.get("https://eeedatabase.onrender.com//auth/student")
+	  axios.get("https://eeedatabase.onrender.com/auth/student")
 	  .then(result=>{
 		if (result.data){
 		  setStudent(result.data)

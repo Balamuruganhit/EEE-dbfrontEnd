@@ -14,7 +14,7 @@ const Bonafide =()=>{
     event.preventDefault();
     
 
-    axios.post("http://localhost:5000/data/student")
+    axios.post("https://eeedatabase.onrender.com/data/student")
     .then(result =>{
       if(result){
        setValues(result)

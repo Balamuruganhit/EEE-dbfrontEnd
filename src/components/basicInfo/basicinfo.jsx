@@ -21,7 +21,7 @@ const BasicInfo = () => {
 	const url="https://drive.google.com/uc?export=download&id="+personalData.photo;
 	
 	useEffect(()=>{
-		axios.get("https://eeedatabase.onrender.com//data/detail/"+id)
+		axios.get("https://eeedatabase.onrender.com/data/detail/"+id)
 		.then(result=>{
 			if (result.data){
 			  setStudent(result.data)
