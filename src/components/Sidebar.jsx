@@ -6,7 +6,7 @@ import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import axios from 'axios'
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = ({value}) => {
   const [selected, setSelected] = useState(0);
@@ -21,11 +21,13 @@ const Sidebar = ({value}) => {
       left : '-60%'
     }
   }
+  const anavigate=useNavigate();
   const handlerLogout=()=>{
-    axios.get("https://eeedatabase.onrender.com/auth/logout")
+    console.log("error")
+    axios.get("https://eeedatabase.onrender.com/data/mark")
     .then(result=>{
 			if(result.data.status){
-        Navigate("/")
+        anavigate("/adminlogin")
       }
 		}).catch(err => console.log(err))
   }
@@ -61,10 +63,10 @@ const Sidebar = ({value}) => {
           );
         })}
         {/* signoutIcon */}
-        <div className="menuItem" >
-          <button onClick={handlerLogout}>
+        <div className="menuItem" onClick={handlerLogout}>
+         
           <UilSignOutAlt />
-          </button>
+       
         </div>
       </div>
     </motion.div>
