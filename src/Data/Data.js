@@ -30,27 +30,7 @@ export const SidebarData = [
     heading: "Dashboard",
   },
  
-  {
-    icon: UilUsersAlt,
-    heading: "Attendance",
-  },
-
-  {
-    icon: UilChart,
-    heading: 'Semester Mark'
-  },
-  {
-    icon: UilChart,
-    heading: 'Extra Curriculum'
-  },
-  {
-    icon: UilChart,
-    heading: 'Project'
-  },
-  {
-    icon: UilChart,
-    heading: 'Apply Bonafide'
-  },
+ 
 ];
 export const SidebarData2=[
   {

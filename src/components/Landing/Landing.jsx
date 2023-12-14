@@ -14,14 +14,7 @@ const Landing=()=>{
 			<section className="imager">
 						<div className="navbar1">
 						<img src={img1} alt ="mg" className='LOGO2'></img>
-							
-							<ul>
-								<li><a href='#'>Home</a></li>
-								<li><a href='#'>Accadamics</a></li>
-								<li><a href='#'>Admission</a></li>
-								<li><a href='#'>Campus</a></li>
-								<li><a href='#'>About us</a></li>
-							</ul>
+						
 						</div>
 						<div className="content5">
 							<h1>ALAGAPPA CHETTIAR GOVERNMENT COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
