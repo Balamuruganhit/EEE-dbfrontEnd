@@ -24,7 +24,7 @@ const Sidebar = ({value}) => {
   const anavigate=useNavigate();
   const handlerLogout=()=>{
     console.log("error")
-    axios.get("https://eeedatabase.onrender.com/data/mark")
+    axios.get("https://eeedatabase.onrender.com/auth/logout")
     .then(result=>{
 			if(result.data.status){
         anavigate("/adminlogin")
